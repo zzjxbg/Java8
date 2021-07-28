@@ -2,7 +2,7 @@ package com.mayikt;
 
 /**
  * jdk8之前,interface中定义变量和方法,变量必须是public static final,方法必须是public abstract的
- * jdk开始,支持使用static和default修饰,可以写方法体,且不需要子类重写
+ * jdk8开始,支持使用static和default修饰,可以写方法体,且不需要子类重写
  */
 public interface JDK8Interface {
     /**
