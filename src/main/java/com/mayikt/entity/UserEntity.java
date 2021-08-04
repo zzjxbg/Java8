@@ -45,7 +45,8 @@ public class UserEntity {
         }
     }
 
-    //重写hashcode方法保证存入map去重(属性值去重)
+    //重写hashcode方法保证存入map去重(同一个自定义类因内存地址不同当作不同的key存入两次)
+    //不重写hashcode码为默认的内存地址(继承于Object类)
     @Override
     public int hashCode() {
         return userName.hashCode();
