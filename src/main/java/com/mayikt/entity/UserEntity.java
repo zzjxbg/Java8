@@ -35,4 +35,20 @@ public class UserEntity {
                 '}';
     }
 
+    //重写equals方法使得比较两个对象的属性值而不是内存地址
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof UserEntity) {
+            return userName.equals(((UserEntity) obj).userName) && age == (((UserEntity) obj).age);
+        } else {
+            return false;
+        }
+    }
+
+    //重写hashcode方法保证存入map去重(属性值去重)
+    @Override
+    public int hashCode() {
+        return userName.hashCode();
+    }
+
 }
