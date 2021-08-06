@@ -19,5 +19,7 @@ public class Test14 {
                 return "mayikt".equals(userEntity.getUserName()) && userEntity.getAge() > 18;
             }
         }).forEach((userEntity -> System.out.println(userEntity)));
+        //lambda表达式形式
+//        stream.filter(userEntity -> "mayikt".equals(userEntity.getUserName()) && userEntity.getAge() > 18).forEach((userEntity -> System.out.println(userEntity)));
     }
 }
