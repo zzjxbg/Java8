@@ -19,6 +19,7 @@ public class Test23 {
         System.out.println(mayiktService1.get(new Test23()));
 
         //3.对象方法引入 这时函数接口第一个参数传递test23 返回调用test23.objGet方法
+        //对象名::实现方法
         MayiktService mayiktService2 = Test23::objGet;
         System.out.println(mayiktService2.get(new Test23()));
         //Test23::objGet;----(test23)->test23.objGet();
