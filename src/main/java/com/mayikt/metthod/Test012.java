@@ -25,6 +25,7 @@ public class Test012 {
         messageInterface3.get(2);
 
         //方法引入写法
+        //当要传递给Lambda体的操作，已经有了实现方法，可以使用方法引用
         MessageInterface messageInterface4 = Test012::staticGet;
         messageInterface4.get(10);
         /**
