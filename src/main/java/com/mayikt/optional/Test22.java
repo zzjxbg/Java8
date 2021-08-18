@@ -17,7 +17,7 @@ public class Test22 {
 //            orderEntity = createOrder();
 //        }
         /**
-         * orElseGet()---写函数的接口的形式 赋默认值 可以接受Supplier的实现用来生成默认值
+         * orElseGet()---写函数的接口的形式 赋默认值(给orderEntity) 可以接受Supplier的实现用来生成默认值
          * orElse()---直接传递默认值
          */
 //        return Optional.ofNullable(orderEntity).orElse(createOrder());
