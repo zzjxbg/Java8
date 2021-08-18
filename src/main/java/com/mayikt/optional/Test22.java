@@ -21,6 +21,10 @@ public class Test22 {
          * orElse()---直接传递默认值
          */
 //        return Optional.ofNullable(orderEntity).orElse(createOrder());
+//        return Optional.ofNullable(orderEntity).orElseGet(()->{
+//            orderEntity = createOrder();
+//            return orderEntity;
+//        });
         return Optional.ofNullable(orderEntity).orElseGet(Test22::orElseGet);  //静态方法引入
 //        return orderEntity;
     }
