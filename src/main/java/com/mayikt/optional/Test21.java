@@ -13,7 +13,7 @@ public class Test21 {
 //        if(present) {
 //            System.out.println(optional.get());
 //        }
-        //userName不为空的情况下,直接调用accept打印值  userName==null的情况下 就不会执行accept
+        //userName不为空的情况下,直接调用accept打印值 userName==null的情况下 就不会执行accept
 //        optional.ifPresent(s-> System.out.println(s));
         optional.ifPresent(System.out::println);
     }
